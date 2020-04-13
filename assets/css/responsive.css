@@ -44,6 +44,10 @@
     .mobile-menu__icon {
         display: block;
     }
+    .footer__download-apps-link {
+        display: block;
+        padding: 7px 0;
+    }
 }
 
 /* Table */
