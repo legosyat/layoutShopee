@@ -155,7 +155,7 @@ i.header__navbar-icon {
   width: 185px;  
   position: absolute;
   display: none;
-  top: 160%;
+  top: 100%;
   left: 0;
   padding: 5px;
   border-radius: 3px;
@@ -325,6 +325,7 @@ li.header__navbar-item:hover > a.header__navbar-item-link + .header__notify {
 .auth-form {
   background-color: var(--white-color);
   border-radius: 5px;
+  display: none;
 }
 
 .auth-form__container {
