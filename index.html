@@ -22,7 +22,7 @@
                 <nav class="header__navbar hide-on-mobile-tablet">
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item header__navbar-item--separate">
-                            <a href="#" class="header__navbar-item-link">Kênh Người Bán</a>
+                            <a href="#" class="header__navbar-item-link">Kênh Người Người</a>
                         </li>
                         <li class="header__navbar-item header__navbar-item--separate header__navbar-has-qr-code">
                             <a href="#" class="header__navbar-item-link">Tải ứng dụng</a>
@@ -156,15 +156,15 @@
                         </li>
 
                         <!-- Login and Register -->
-                        <!-- <li class="header__navbar-item header__navbar-item--separate">
-                            <a href="#" class="header__navbar-item-link ">Đăng Ký</a>
+                        <li class="header__navbar-item header__navbar-item--separate">
+                            <a href="#" class="header__navbar-item-link" id="btnRegister" onclick="showFormRegister()">Đăng Ký</a>
                         </li>
                         <li class="header__navbar-item">
-                            <a href="#" class="header__navbar-item-link">Đăng Nhập</a>
-                        </li> -->
+                            <a href="#" class="header__navbar-item-link" id="btnDangNhap" onclick="showFormLogin()">Đăng Nhập</a>
+                        </li>
 
                         <!-- Login User -->
-                        <li class="header__navbar-item header__navbar-user">
+                        <li class="header__navbar-item header__navbar-user" style="display: none;">
                             <a href="index.html" class="header__navbar-item-link">
                                 <img class="header__navbar-user-img" src="assets/img/Giay_Bitis_14.jpg" alt="">
                                 <span class="header__navbar-user-name">Chris Nguyen</span>
@@ -1475,12 +1475,12 @@
         </footer>
 
         <!-- Modal Layout-->
-        <div class="modal" style="display: none;">
+        <div class="modal" id="modal">
             <div class="modal__overlay"></div>
             <div class="modal__body">
                 <div class="modal__inner">
                     <!-- Register Form -->
-                    <div class="auth-form" style="display: none;">
+                    <div class="auth-form" id="auth-form-register">
                         <div class="auth-form__container">
                             <div class="auth-form__header">
                                 <h3 class="auth-form__heading">Đăng Ký</h3>
@@ -1507,7 +1507,7 @@
                                 </div>
 
                                 <div class="auth-form__controls">
-                                    <button class="btn">TRỞ LẠI</button>
+                                    <button class="btn" id="btnTroVe" onclick="back()">TRỞ LẠI</button>
                                     <button class="btn btn-primary">ĐĂNG KÝ</button>
                                 </div>
                             </div>
@@ -1526,7 +1526,7 @@
                     </div>
 
                     <!-- Login Form -->
-                    <div class="auth-form">
+                    <div class="auth-form" id="auth-form-login">
                         <div class="auth-form__container">
                             <div class="auth-form__header">
                                 <h3 class="auth-form__heading">Đăng Nhập</h3>
@@ -1550,7 +1550,7 @@
                                 </div>
 
                                 <div class="auth-form__controls">
-                                    <button class="btn">TRỞ LẠI</button>
+                                    <button class="btn" id="btnTroVe-2" onclick="back()">TRỞ LẠI</button>
                                     <button class="btn btn-primary">ĐĂNG NHẬP</button>
                                 </div>
                             </div>
@@ -1575,6 +1575,8 @@
             </div>
         </div>
     </div>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

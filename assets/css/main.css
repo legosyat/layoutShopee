@@ -159,8 +159,8 @@ i.header__navbar-icon {
   left: 0;
   padding: 5px;
   border-radius: 3px;
-  animation: fadeIn ease-in .3s;
   z-index: 1001;
+  animation: fadeIn ease-in .3s;
 }
 
 .header__qr-code::before {
@@ -325,8 +325,11 @@ li.header__navbar-item:hover > a.header__navbar-item-link + .header__notify {
 .auth-form {
   background-color: var(--white-color);
   border-radius: 5px;
-  display: none;
 }
+
+#auth-form-register {display: none;}
+
+#auth-form-login {display: none;}
 
 .auth-form__container {
   padding: 0 32px;

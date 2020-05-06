@@ -104,6 +104,9 @@ html{
 }
 
 /* Modal */
+#modal {
+    display: none;
+}
 .modal {
     position: fixed;
     top: 0;
@@ -112,6 +115,7 @@ html{
     bottom: 0;
     display: flex;
     animation: fadeIn linear .2s;
+    z-index: 1000;
 }
 
 .modal__overlay {
@@ -127,7 +131,7 @@ html{
     --growth-to: 1;
     width: auto;
     height: auto;
-    margin: auto;
+    margin: 10vh auto;
     z-index: 1;
     animation: growth linear .2s;
 }
