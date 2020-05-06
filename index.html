@@ -157,10 +157,12 @@
 
                         <!-- Login and Register -->
                         <li class="header__navbar-item header__navbar-item--separate">
-                            <a href="#" class="header__navbar-item-link" id="btnRegister" onclick="showFormRegister()">Đăng Ký</a>
+                            <a href="#" class="header__navbar-item-link" id="btnRegister"
+                                onclick="showFormRegister()">Đăng Ký</a>
                         </li>
                         <li class="header__navbar-item">
-                            <a href="#" class="header__navbar-item-link" id="btnDangNhap" onclick="showFormLogin()">Đăng Nhập</a>
+                            <a href="#" class="header__navbar-item-link" id="btnDangNhap" onclick="showFormLogin()">Đăng
+                                Nhập</a>
                         </li>
 
                         <!-- Login User -->
@@ -213,15 +215,15 @@
 
                 <!-- Header with search -->
                 <div class="header-with-search">
-                   <div class="header-icon__checkbox">
-                    <label for="mobile-menu-checkbox">
-                        <i class="fas fa-bars mobile-menu__icon"></i>
-                    </label>
-                    
-                    <label for="mobile-search-checkbox" class="header__mobile-search">
-                        <i class="fas fa-search header__mobile-search-icon"></i>
-                    </label>
-                   </div>
+                    <div class="header-icon__checkbox">
+                        <label for="mobile-menu-checkbox">
+                            <i class="fas fa-bars mobile-menu__icon"></i>
+                        </label>
+
+                        <label for="mobile-search-checkbox" class="header__mobile-search">
+                            <i class="fas fa-search header__mobile-search-icon"></i>
+                        </label>
+                    </div>
                     <div class="header__logo hide-on-tablet">
                         <a href="./index.html" class="header__logo-link">
                             <svg class="header__logo-img" viewBox="0 0 192 65">
@@ -1476,99 +1478,102 @@
 
         <!-- Modal Layout-->
         <div class="modal" id="modal">
-            <div class="modal__overlay"></div>
-            <div class="modal__body">
-                <div class="modal__inner">
-                    <!-- Register Form -->
-                    <div class="auth-form" id="auth-form-register">
-                        <div class="auth-form__container">
-                            <div class="auth-form__header">
-                                <h3 class="auth-form__heading">Đăng Ký</h3>
-                                <span class="auth-form__switch-btn">Đăng Nhập</span>
-                            </div>
-                            <div class="auth-form__form">
-                                <div class="auth-form__group">
-                                    <input type="text" class="auth-form__input" placeholder="Số điện thoại">
+            <div class="modal__content">
+                <div class="modal__overlay"></div>
+                <div class="modal__body">
+                    <div class="modal__inner">
+                        <!-- Register Form -->
+                        <div class="auth-form" id="auth-form-register">
+                            <div class="auth-form__container">
+                                <div class="auth-form__header">
+                                    <h3 class="auth-form__heading">Đăng Ký</h3>
+                                    <span class="auth-form__switch-btn">Đăng Nhập</span>
                                 </div>
-                                <div class="auth-form__group auth-form__verify">
-                                    <input type="text" class="auth-form__input"
-                                        placeholder="Nhập mã ngẫu nhiên/mã hiển thị ở bên phải">
-                                    <img src="https://shopee.vn/api/v0/captcha?1584551586081&scenario=signup" alt="">
-                                </div>
-                                <div class="auth-form__group auth-form__code">
-                                    <input type="text" class="auth-form__input" placeholder="Mã xác minh">
-                                    <button>Gửi mã xác minh</button>
-                                </div>
-                                <div class="auth-form__aside">
-                                    <p class="auth-form__policy">Bằng việc đăng kí, bạn đã đồng ý với My Shop về
-                                        <a href="#" class="auth-form__policy-link">Điều khoản dịch vụ</a> &
-                                        <a href="#" class="auth-form__policy-link">Chính sách bảo mật</a>
-                                    </p>
-                                </div>
+                                <div class="auth-form__form">
+                                    <div class="auth-form__group">
+                                        <input type="text" class="auth-form__input" placeholder="Số điện thoại">
+                                    </div>
+                                    <div class="auth-form__group auth-form__verify">
+                                        <input type="text" class="auth-form__input"
+                                            placeholder="Nhập mã ngẫu nhiên/mã hiển thị ở bên phải">
+                                        <img src="https://shopee.vn/api/v0/captcha?1584551586081&scenario=signup"
+                                            alt="">
+                                    </div>
+                                    <div class="auth-form__group auth-form__code">
+                                        <input type="text" class="auth-form__input" placeholder="Mã xác minh">
+                                        <button>Gửi mã xác minh</button>
+                                    </div>
+                                    <div class="auth-form__aside">
+                                        <p class="auth-form__policy">Bằng việc đăng kí, bạn đã đồng ý với My Shop về
+                                            <a href="#" class="auth-form__policy-link">Điều khoản dịch vụ</a> &
+                                            <a href="#" class="auth-form__policy-link">Chính sách bảo mật</a>
+                                        </p>
+                                    </div>
 
-                                <div class="auth-form__controls">
-                                    <button class="btn" id="btnTroVe" onclick="back()">TRỞ LẠI</button>
-                                    <button class="btn btn-primary">ĐĂNG KÝ</button>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="auth-form__socials">
-                            <a href="#" class="btn--with-icon btn--with-icon--facebook">
-                                <i class="fab fa-facebook-square"></i>
-                                <span>Kết nối với Facebook</span>
-                            </a>
-                            <a href="#" class="btn--with-icon btn--with-icon--google">
-                                <i class="fab fa-google"></i>
-                                <span>Kết nối với Google</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Login Form -->
-                    <div class="auth-form" id="auth-form-login">
-                        <div class="auth-form__container">
-                            <div class="auth-form__header">
-                                <h3 class="auth-form__heading">Đăng Nhập</h3>
-                                <span class="auth-form__switch-btn">Đăng Ký</span>
-                            </div>
-                            <div class="auth-form__form">
-                                <div class="auth-form__group">
-                                    <input type="text" class="auth-form__input"
-                                        placeholder="Email/Số Điện Thoại/Tên đăng nhập">
-                                </div>
-                                <div class="auth-form__group">
-                                    <input type="text" class="auth-form__input" placeholder="Mật khẩu">
-                                </div>
-                                <div class="auth-form__aside">
-                                    <div class="auth-form__help">
-                                        <a href="#" class="auth-form__help-link auth-form__help-primary">Quên Mật
-                                            Khẩu</a>
-                                        <span class="auth-form__help-separate"></span>
-                                        <a href="#" class="auth-form__help-link">Cần Trợ Giúp?</a>
+                                    <div class="auth-form__controls">
+                                        <button class="btn" id="btnTroVe" onclick="back()">TRỞ LẠI</button>
+                                        <button class="btn btn-primary">ĐĂNG KÝ</button>
                                     </div>
                                 </div>
 
-                                <div class="auth-form__controls">
-                                    <button class="btn" id="btnTroVe-2" onclick="back()">TRỞ LẠI</button>
-                                    <button class="btn btn-primary">ĐĂNG NHẬP</button>
-                                </div>
                             </div>
-
+                            <div class="auth-form__socials">
+                                <a href="#" class="btn--with-icon btn--with-icon--facebook">
+                                    <i class="fab fa-facebook-square"></i>
+                                    <span>Kết nối với Facebook</span>
+                                </a>
+                                <a href="#" class="btn--with-icon btn--with-icon--google">
+                                    <i class="fab fa-google"></i>
+                                    <span>Kết nối với Google</span>
+                                </a>
+                            </div>
                         </div>
-                        <div class="auth-form__socials">
-                            <a href="#" class="btn--with-icon btn--with-icon--sms">
-                                <i class="fas fa-comment-dots btn--with-icon--social"></i>
-                                <span class="title-social">SMS</span>
-                            </a>
-                            <a href="#" class="btn--with-icon btn--with-icon--facebook">
-                                <i class="fab fa-facebook-square btn--with-icon--social"></i>
-                                <span class="title-social">Facebook</span>
-                            </a>
-                            <a href="#" class="btn--with-icon btn--with-icon--google">
-                                <i class="fab fa-google btn--with-icon--social"></i>
-                                <span class="title-social">Google</span>
-                            </a>
+
+                        <!-- Login Form -->
+                        <div class="auth-form" id="auth-form-login">
+                            <div class="auth-form__container">
+                                <div class="auth-form__header">
+                                    <h3 class="auth-form__heading">Đăng Nhập</h3>
+                                    <span class="auth-form__switch-btn">Đăng Ký</span>
+                                </div>
+                                <div class="auth-form__form">
+                                    <div class="auth-form__group">
+                                        <input type="text" class="auth-form__input"
+                                            placeholder="Email/Số Điện Thoại/Tên đăng nhập">
+                                    </div>
+                                    <div class="auth-form__group">
+                                        <input type="text" class="auth-form__input" placeholder="Mật khẩu">
+                                    </div>
+                                    <div class="auth-form__aside">
+                                        <div class="auth-form__help">
+                                            <a href="#" class="auth-form__help-link auth-form__help-primary">Quên Mật
+                                                Khẩu</a>
+                                            <span class="auth-form__help-separate"></span>
+                                            <a href="#" class="auth-form__help-link">Cần Trợ Giúp?</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="auth-form__controls">
+                                        <button class="btn" id="btnTroVe-2" onclick="back()">TRỞ LẠI</button>
+                                        <button class="btn btn-primary">ĐĂNG NHẬP</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="auth-form__socials">
+                                <a href="#" class="btn--with-icon btn--with-icon--sms">
+                                    <i class="fas fa-comment-dots btn--with-icon--social"></i>
+                                    <span class="title-social">SMS</span>
+                                </a>
+                                <a href="#" class="btn--with-icon btn--with-icon--facebook">
+                                    <i class="fab fa-facebook-square btn--with-icon--social"></i>
+                                    <span class="title-social">Facebook</span>
+                                </a>
+                                <a href="#" class="btn--with-icon btn--with-icon--google">
+                                    <i class="fab fa-google btn--with-icon--social"></i>
+                                    <span class="title-social">Google</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

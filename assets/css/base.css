@@ -107,7 +107,7 @@ html{
 #modal {
     display: none;
 }
-.modal {
+.modal__content {
     position: fixed;
     top: 0;
     right: 0;
